@@ -81,7 +81,7 @@ router.post('/', (req, res) => {
       }
     }).then(dbUserData => {
       if (!dbUserData) {
-        res.status(400).json({ message: 'There was no User with that email address!' });
+        res.status(400).json({ message: 'There was no User with that email address' });
         return;
       }
   
@@ -127,7 +127,7 @@ router.put('/:id', withAuth, (req, res) => {
     })
       .then(dbUserData => {
         if (!dbUserData[0]) {
-          res.status(404).json({ message: 'There was no User under this id' });
+          res.status(404).json({ message: 'No user found with this id' });
           return;
         }
         res.json(dbUserData);
