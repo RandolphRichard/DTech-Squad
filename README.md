@@ -1,4 +1,4 @@
-# MVC-Techs-Blog
+# DTech-Squad
 
 * My app can be found at:
  https://tech-blog-posts.herokuapp.com/
